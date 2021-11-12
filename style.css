@@ -1,0 +1,158 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ^CSS RESET^ */
+
+html {
+    font-family: 'Roboto', sans-serif;
+    /*
+    color: #0f380f;
+    color: #306230;
+    color: #8bac0f;
+    color: #9bbc0f;
+    color: #cadc9f;
+    */
+}
+body {
+    background-color: #8bac0f;
+    /*
+    background-image: url(img/gameboy-blue-green-red-wallpaper.jpg);
+    background-attachment: fixed;
+    background-size: 100% auto;
+    */
+    padding: 2em;
+}
+@font-face {
+    font-family: 'GameBoy';
+    src: url(fonts/GameBoy.ttf);
+}
+@font-face {
+    font-family: 'Immortal';
+    src: url(fonts/IMMORTAL.ttf);
+}
+@font-face {
+    font-family: 'm5x7';
+    src: url(fonts/m5x7.ttf);
+}
+@font-face {
+    font-family: 'ps2p';
+    src: url(fonts/PressStart2P-Regular.ttf);
+}
+.gameboylogo {
+    margin-bottom: 2em;
+    width: 80%;
+    height: auto;
+    padding: 20px 20px;
+    /*background-color: #8bac0f;
+    border-radius: 5% 5% 5% 5%;*/
+}
+.divNaLogo {
+    text-align: center;
+}
+.divNaH {
+    text-align: center;
+    background-color: #0f380f;
+    line-height: normal;
+    margin: 1em auto;
+    height: auto;
+    width: max-content;
+    border-radius: 1% 1% 35% 1%;
+}
+h1 {
+    color: white;
+    font-size: 2.5em;
+    font-weight: bolder;
+    font-family: "ps2p", Verdana;
+    letter-spacing: normal;
+    padding: 0.7em;
+    text-shadow: 5px 5px 5px black;
+}
+.container {
+    padding: 2em;
+    background-color: #0f380f;
+    color: #fff;
+    line-height: normal;
+    border-radius: 1% 1% 20% 1%;
+    font-size: 1.1em;
+}
+.menu {
+    text-align: center;
+    margin: 0.5em 0em;
+}
+.listaMenu {
+    margin: 1em;
+    background-color: #8bac0f;
+    justify-content: center;
+    display: flex;
+}
+.listaMenu > li {
+    display: inline-block;
+    margin: -0.15em;
+    background-color: #0f380f;
+    height: 3em;
+    width: 12em;
+    transition: ease-in-out 0.1s;
+    
+}
+/*.start {
+    border-radius: 20% 0% 0% 20%;
+}
+.end {
+    border-radius: 0% 20% 20% 0%;
+}*/
+.listaMenu > li > a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 0.5em;
+    transition: ease-in-out 0.1s;
+    font-family: "ps2p", Verdana;
+}
+.listaMenu > li:hover {
+    transition: ease-in-out 0.1s;
+    background-color: #071c07;
+}
+.listaMenu > li:hover a {
+    transition: ease-in-out 0.1s;
+    color: #d1d1d1;
+}
